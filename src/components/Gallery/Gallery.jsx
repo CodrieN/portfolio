@@ -66,14 +66,14 @@ function Gallery() {
             <img
               className="gifCard"
               id="gifBooki"
-              src="/img/AnimationBooki.gif"
+              src="./img/AnimationBooki.gif"
               alt="Booki"
             />
           ) : (
             <img
               className="imgCard"
               id="imgBooki"
-              src="/img/imgBooki0.jpg"
+              src="./img/imgBooki0.jpg"
               alt="BookiB&W"
             />
           )}
