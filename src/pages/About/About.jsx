@@ -27,10 +27,16 @@ function About() {
           considérablement.
         </p>
         <h2>Formations</h2>
-        <img src="/img/Capture d’écran 2023-02-03 134633.png" alt="Formation" />
-        <img src="/img/Capture d’écran 2023-08-06 212948.png" alt="Formation" />
+        <img
+          src="./img/Capture d’écran 2023-02-03 134633.png"
+          alt="Formation"
+        />
+        <img
+          src="./img/Capture d’écran 2023-08-06 212948.png"
+          alt="Formation"
+        />
         <h2>Compétences</h2>
-        <img id="imgTalent" src="/img/talent.png" alt="Talent" />
+        <img id="imgTalent" src="./img/talent.png" alt="Talent" />
 
         <iframe
           title="Miro"

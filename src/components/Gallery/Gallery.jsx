@@ -105,14 +105,14 @@ function Gallery() {
             <img
               className="gifCard"
               id="gifNina"
-              src="/img/AnimationNina.gif"
+              src="./img/AnimationNina.gif"
               alt="Nina Carducci"
             />
           ) : (
             <img
               className="imgCard"
               id="imgNina"
-              src="/img/Nina0.png"
+              src="./img/Nina0.png"
               alt="NinaB&W"
             />
           )}
@@ -148,14 +148,14 @@ function Gallery() {
             <img
               className="gifCard"
               id="gifSophie"
-              src="/img/AnimationSophie.gif"
+              src="./img/AnimationSophie.gif"
               alt="Sophie Bluel"
             />
           ) : (
             <img
               className="imgCard"
               id="imgSophie"
-              src="/img/Sophie0.png"
+              src="./img/Sophie0.png"
               alt="SophieB&W"
             />
           )}
