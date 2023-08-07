@@ -6,7 +6,6 @@ function Header() {
   const [isGithubHovered, setIsGithubHovered] = useState(false);
   const [isHomeHovered, setIsHomeHovered] = useState(false);
   const [isLinkedInHovered, setIsLinkedInHovered] = useState(false);
-  const logo = "../img/am.jpg";
 
   const handleGithubMouseEnter = () => {
     setIsGithubHovered(true);
@@ -72,7 +71,7 @@ function Header() {
     <>
       <header>
         <NavLink to="/" className="logo-link">
-          <img id="imgAd" alt="" src={logo} width="200" title="HOME" />
+          <img id="imgAd" alt="" src="./img/am.jpg" width="200" title="HOME" />
         </NavLink>
         <div className="divNav">
           <a href="https://github.com/CodrieN" target="_blank" rel="noreferrer">
