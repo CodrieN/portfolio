@@ -1,0 +1,13 @@
+#about {
+  display: flex;
+  flex-direction: column;
+}
+#imgTalent {
+  scale: 1;
+}
+
+@media (max-width: 1280px) {
+  iframe {
+    display: none;
+  }
+}

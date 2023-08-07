@@ -1,0 +1,233 @@
+#gridCard {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border: none #ccc;
+  border-radius: 50px;
+  width: 333px;
+  height: 333px;
+  position: relative; /* Add this line to make the position:absolute for titleCard work */
+  overflow: hidden; /* Hide overflowing content (like gifCard) */
+}
+
+.imgCard,
+.gifCard {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s; /* Add a smooth transition for opacity */
+}
+
+.gifCard {
+  opacity: 0; /* Hide gifCard by default */
+}
+
+.titleCard {
+  position: absolute;
+  bottom: 0; /* Position the titleCard at the bottom edge of .card */
+  left: 50%; /* Move the titleCard to the horizontal center of .card */
+  transform: translateX(
+    -50%
+  ); /* Center the titleCard precisely at the horizontal center */
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Add this to make the content display in two rows */
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.titleContent {
+  text-align: center; /* Center the text horizontally */
+}
+
+.subtitleContent {
+  font-size: 0.8em; /* Adjust the font size for the subtitle */
+}
+
+.card:hover .imgCard {
+  opacity: 0; /* Hide imgCard on hover */
+}
+
+.card:hover .gifCard {
+  opacity: 1; /* Show gifCard on hover */
+}
+
+/* Additional styles for the anchor link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+#titleCardBooki {
+  background-color: #0065fc;
+}
+
+#titleCardNina {
+  background-color: #f6d2b8;
+  color: rgb(53, 53, 53);
+}
+
+#titleCardSophie {
+  color: #ffffff;
+  background-color: rgb(29, 97, 84);
+}
+
+/* Styles for the custom modal dialog */
+dialog::backdrop {
+  backdrop-filter: blur(
+    105px
+  ); /* Add backdrop-filter to create the transparent effect */
+  background: rgba(0, 0, 0, 0.74);
+}
+
+/* Styles for the custom modal dialog */
+dialog::backdrop {
+  backdrop-filter: blur(
+    105px
+  ); /* Add backdrop-filter to create the transparent effect */
+  background: rgba(0, 0, 0, 0.74);
+}
+
+dialog {
+  z-index: 10;
+  width: 60%;
+  height: auto;
+  position: fixed; /* Change position to fixed */
+  top: 50%; /* Center the dialog vertically */
+  left: 50%; /* Center the dialog horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center the dialog both horizontally and vertically */
+  padding: 5rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0 200px 20000px rgba(0, 0, 0, 0.9);
+
+  #dialClassBooki {
+    a,
+    button,
+    h2,
+    i {
+      color: rgb(0, 101, 252);
+    }
+    i {
+      padding-inline: 0.25rem;
+    }
+    h3 {
+      border-bottom: 2mm ridge rgba(0, 101, 252, 0.6);
+    }
+  }
+
+  #dialClassNina {
+    a,
+    button,
+    h2,
+    i {
+      color: rgb(206, 149, 108);
+    }
+    i {
+      padding-inline: 0.25rem;
+    }
+    h3 {
+      border-bottom: 2mm ridge rgba(206, 149, 108, 0.6);
+    }
+  }
+
+  #dialClassSophie {
+    a,
+    button,
+    h2,
+    i {
+      color: rgb(29, 97, 84);
+    }
+    i {
+      padding-inline: 0.25rem;
+    }
+    h3 {
+      border-bottom: 2mm ridge rgba(29, 97, 84, 0.6);
+    }
+  }
+  .dialClass {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    a {
+      padding-inline: 0.25rem;
+      i {
+        padding-right: 0.25rem;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      padding-top: 1rem;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    h3 {
+      width: 21%;
+      font-weight: bold;
+    }
+
+    button {
+      border: none;
+      background-color: rgb(255, 255, 255);
+      font-size: larger;
+      font-weight: bold;
+      width: 5%;
+    }
+  }
+}
+@media (max-width: 1280px) {
+  dialog {
+    font-size: 14px;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 65%;
+    height: auto;
+
+    .dialClass {
+      gap: 1rem;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  dialog {
+    font-size: 14px;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 95%;
+    height: auto;
+
+    .dialClass {
+      gap: 1rem;
+    }
+  }
+}

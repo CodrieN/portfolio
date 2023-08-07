@@ -1,0 +1,14 @@
+.h2Services {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-block: 1rem;
+}
+
+#ulServices {
+  list-style-type: counter;
+  padding: 2rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

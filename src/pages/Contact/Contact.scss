@@ -1,0 +1,38 @@
+#h2Contacts {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-block: 1rem;
+  margin-bottom: 5rem;
+}
+
+#ulContacts {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto; /* Set the desired width for the contact section */
+  gap: 10rem;
+}
+
+#ulContacts a {
+  width: 35%; /* Adjust the width of each column to your liking */
+  background-color: black;
+  border-radius: 25px;
+  box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2);
+
+  color: white;
+  padding: 4rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.fa-brandsC {
+  font-size: 5rem;
+}
+
+@media (max-width: 630px) {
+  #ulContacts {
+    gap: 1rem;
+  }
+}

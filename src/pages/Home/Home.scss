@@ -1,0 +1,45 @@
+#serviceNav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.serviceLi {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  transition: transform 300ms ease;
+}
+
+.scale-text {
+  transform: scale(1.5);
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  #span1 {
+    font-family: "Tangerine", serif;
+    font-size: 4rem;
+  }
+  #span2 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 630px) {
+  #serviceNav {
+    flex-direction: column;
+  }
+  nav {
+    align-items: center;
+  }
+}
